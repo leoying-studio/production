@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>js版幻灯片</title>
+<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+<style>
+*{padding:0;margin:0;}
+#banner{margin-top:100px;}
+</style>
+<script type="text/javascript">
+var index = 0;
+var ImgBox  = document.getElementsByTagName("img");
+
+window.onload = function banner()
+{
+	for(var i = 0;i<ImgBox.length;i++)
+	{
+		ImgBox[i].style.display ="none";	
+	}
+	ImgBox[0].style.display = "block";
+	setInterval(function(){
+		index ++;
+		if(index>2)
+		{
+			index = 0;	
+			ImgBox[2].style.display ="none";	
+			ImgBox[0].style.display ="block";	
+		}
+		else
+		{
+			ImgBox[index-1].style.display ="none";	
+			ImgBox[index].style.display ="block";
+		}
+		
+		},3000)
+
+}
+
+</script>
+</head>
+
+<body>
+		<div id="imgBox">
+        		<img src="images/banner2_02.jpg"/>
+                <img src="images/banner3_02.jpg" />
+                <img src="images/baner1_02.jpg" />
+        </div>
+        <div id="banner">
+        
+        </div>
+</body>
+</html>

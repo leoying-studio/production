@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+#header{height:140px;background-color:#f5f5f5;width:1376px;}
+.header_left{padding:39px 20px 0px 120px;position:relative;float:left;}
+.life{position:absolute;top:24px;left:324px;}
+.header_right{float:right;width:500px;}
+.active{background:url(../images/About_US.png);width:97px;height:32px;display:block;text-align:center;}
+.header_rigft_bg{float:right;padding:28px 70px 0 0px;position:relative;}
+.Content{position:absolute;top:20px;width:672px;left:700px;height:82px;}
+.service_ul{height:20px;}
+.service{width:427px;float:right;padding-right:172px;height:20px;padding-bottom:20px;}
+.service_ul li{float:left;height:20px;}
+.hot-line{font-size:14px;font-family:'微软雅黑';color:#AD987F;font-style:italic;}
+.phonenumber{font-size:24px;font-family:'微软雅黑';color:#AD987F;font-style:italic;font-weight:normal;padding-left:8px;height:20px;line-height:20px;}
+.pen{padding-left:15px;height:13px;line-height:20px;}
+.penImg{padding-top:3px;}
+.client a{padding-left:5px;font-family:'微软雅黑';font-size:14px;color:#ccc;text-decoration:none;}
+.segmentation{padding:0 8px;color:#ccc;}
+.fsGroup a{padding-left:5px;color:#ccc;font-size:14px;font-family:"微软雅黑";text-decoration:none;}
+.fsGroup a:hover,.client a:hover{text-decoration:underline ;color:#999;}
+.fspic{padding-top:5px;}
+.nav{width:562px;height:40px;}
+.nav_ul{list-style:none;}
+.nav_li{float:left;padding:0 20px;border-right:solid 1px #999;}
+.nav_li a{padding:0 0px;font-size:16px;font-family:"微软雅黑";color:#779a81;font-weight:bold;text-decoration : none ;}
+.nav_li a:hover{color:#066;text-decoration:underline;}
+.contact{border-right:none;}
+<!--轮播图效果-->
+#banner{}
+#banner ul{}
+#banner ul li{}
+#box{width:1376px;height:408px;overflow:hidden;position:relative;}
+#ul{width:4128px;height:408px;list-style:none;}
+#ul li{float:left;width:1376px;height:408px;}
+.bannerDot ul li{float:left;padding:0 5px;}
+.bannerDot{position:absolute;top:500px;left:825px;}
+/*公告*/
+#notice{width:1376px;height:40px;}
+.loudBox{width:1000px;height:12px;line-height:40px;margin:0 auto;}
+.loudBox img{float:left;padding-top:12px;padding-right:8px;}
+.loudBox p{font-size:12px;color:#9A9A9A;}
+
+

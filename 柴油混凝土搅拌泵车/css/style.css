@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+	*{margin:0;padding:0}
+	#header{background-color:#06F;height:80px;width:100%;}
+	.logo_left{height:80px;line-height:80px;float:left;}
+	.logo_right{height:40px;line-height:80px;float:right;color:#FFF;font-size:42px;font-weight:bold;}
+	#car img{width:100%;height:538px;}
+	#car{width:100%;height:538px;margin-top:1px;}
+	#nav{height:50px;background-color:#06F;width:100%;}
+	#nav ul{list-style:none;padding-left:50px;}
+	#nav ul li{float:left;line-height:50px;}
+	#nav ul li a{font-size:18px;padding:0 40px;font-family:"微软雅黑";color:white;text-decoration:none;font-weight:bold;display:block;}
+	#nav ul li a:hover{background-color:#00F;color:#CCC;}
+	.footerlogo{float:right;}
+	#container{width:1087px;height:1000px;margin:0 auto;}
+	.Contact{float:left;padding-top:40px;}
+	.active{padding-top:10px;}
+	#footer{width:100%;background:url(../images/footer2.png);height:130px;margin:5px 0;}

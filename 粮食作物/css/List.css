@@ -1,0 +1,61 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+#main{width:1376px;background-color:#F2F2F2;}
+.mianBox{width:1000px;margin:0 auto;height:268px;}
+.list1{width:258px;height:268px;float:left;}
+.user{float:left;padding-right:8px;padding-top:2px;}
+.list1_about{padding:20px 0;margin-bottom:20px;}
+.h3{float:left;color:#87a590;font-size:22px;}
+.company{float:left;color:#999;font-size:16px;padding-left:5px;padding-top:3px;}
+.more{float:right;padding-top:10px;}
+.introduce{padding:12px 5px;color:#CCC;font-family:"宋体";font-size:13px;line-height:25px;}
+.news{width:258px;height:268px;float:left;padding:0 40px;}
+.ComList{float:left;}
+.com_li{padding:10px 10px;background-color:#dbdbdb;margin:8px 5px 0 0;font-size:14px;color:#333;font-family:"宋体";}
+.comimg{float:left;margin-right:5px;}
+.font h4{font-size:14px;font-weight:normal;}
+.font p{color:#ccc;font-size:12px;padding-top:10px;}
+.c1{height:60px;}
+#inlet{width:258px;height:268px;float:left;padding:0 40px;}
+.card{float:left;padding-right:8px;}
+.cardBOX{height:60px;}
+.f1{padding-top:10px;color:#87a590;font-size:18px;}
+/*产品展厅*/
+#PrductShow{width:1000px;margin:0 auto;height:450px;}
+.proHader{width:1000px;background:url(../images/56_03.jpg);height:37px;}
+.backImg,.nextImg{width:52px;float:left;height:300px;text-align:center;cursor: pointer; }
+.back,.next{padding-top:127px;}
+.proheaderImg{float:left;padding-right:14px;}
+.proHader h3{
+			float:left;
+			height:20px;
+			line-height:40px;
+			color:#41434F;
+			font-family:"微软雅黑";
+			font-weight:normal;
+			padding-right:11px;
+			font-size:20px;
+	}
+.proHader h4{height:12px;line-height:40px;color:#41434F;font-size:16px;}
+.gift{float:left;width:192px;height:235px;background-color:#E9E9E9;margin:10px 14px;text-align:center;}
+.gift img{padding:40px 25px;}
+.gift span{display:block;width:100%;margin:0 auto;}
+.giftActive{margin-left:0px;background-color:#EFE4D7;}
+.fl{margin-right:0px;}
+.fl img{padding:30px 25px;}
+.gift span h4{font-size:14px;font-family:"宋体";font-weight:normal;}
+.gift span p{color:#999;padding-top:8px;font-size:12px;}
+.shareDiv{float:left;width:160px;margin:0 22px;}
+.shareFl{margin-left:0px;}
+.shareDiv img{float:left;padding-right:18px;}
+.shareDiv div h3{font-size:14px;font-family:"微软雅黑";color:#454545;}
+.shareDiv div p{font-size:12px;color:#8D8D8D;font-family:"宋体";padding-top:10px;}
+/*页脚样式*/
+#footer{width:1376px;background:url(../images/foooter13872888793.png);height:131px;}
+.shareImgBox b{font-weight:normal;font-family:"宋体";font-size:15px;color:#CCC;}
+.footer_nav ul li{float:left;padding:0 10px;font-size:12px;color:#FFFFFF;font-weight:normal;font-family:"宋体";}
+.footer_nav ul li a{TEXT-DECORATION:none;color:#CCC;}
+.footer_nav ul li a:hover{color:#66F;}
+.footer_nav {height:15px;padding-bottom:10px;}
+.footer_nav p{font-size:12px;color:#FFFFFF;}
