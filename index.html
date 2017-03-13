@@ -1,70 +1,145 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>我的作品网-LiuYing-Studio</title>
-<script src="javascript/jquery-2.2.1.js" type="text/javascript"></script>
-<script src="javascript/Main.js" type="text/javascript"></script>
-<style>
-	*{padding:0;margin:0;list-style:none;}
-	body{background-color:#FFF;}
-	#nav{width:800px;height:300px;margin:90px auto;}
-	#nav ul{list-style:none;width:800px;margin:0 auto;}
-	#nav ul li{float:left;}	
-	#nav ul li a{padding:0 30px;font-family:"微软雅黑";font-size:36px;color:#933;font-weight:bold;text-decoration:none;}
-	#box{width:800px;height:500px;margin:0 auto;overflow:hidden;}
-	.demo{width:800px;height:500px;display:none;background:url(images/1.jpg) no-repeat;background-size:800px 500px;}
-	.active{display:block;}
-	.demo ul{width:600px;height:500px;margin:0 auto;}
-	.demo ul li{float:left;}
-	.demo ul li a{font-size:18px;font-family:"微软雅黑";padding:20px 40px;display:block;
-	text-decoration:none;color:#930;font-style:italic;font-weight:bold;
-	}
-	.demo ul li a:hover{color:#F00;}
-</style>
 
-</head>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>我的作品网-LiuYing-Studio</title>
+		<meta charset="utf-8" name="keywords" content="作品网,工作室,作品展示,leoying,LeoYing,湖北随州洛阳,千年银杏谷,随州洛阳镇">
+		<meta charset="utf-8" name="discription" content="leoying-studio我的作品网是对主要是个人从事web前端开发的示例作品，欢迎大家共同交流学习">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script src="js/lib/jquery-1.8.3.min.js" type="text/javascript"></script>
+		<script src="js/index.js"></script>
 
-<body>
-			<div id="box">
-               		<div class="Warp">
-                    		<div class="demo active">
-								<ul>
-                                		<li><a href="柴油混凝土搅拌泵车/index.html">水泥搅拌泵车-随州汽车之都</a></li>
-                                        <li><a href="粮食作物/index.html">用心作物-粮食作物</a></li>
-                                        <li><a href="背景墙/CSS动画背景墙.html">CSS3照片墙</a></li>
-                                        <li><a href="马尔代夫/index.html">马尔代夫</a></li>
-                                        <li><a href="#">测试中</a></li>
-                                        <li><a href="#">测试中</a></li>
-                                        <li><a href="#">测试中</a></li>
-                                        <li><a href="#">测试中</a></li>
-                                </ul>
-                    		</div>   
-                            <div class="demo">
-                            	<ul>
-                                		<li><a href="#">js排序</a></li>
-                                       	<li><a href="选中行操作/index.html">选中行操作</a></li>
-                                        <li><a href="#">测试中</a></li>
-                                        <li><a href="#">测试中</a></li>
-                                </ul>
-                            </div>   
-                            <div class="demo">
-								<ul>
-                                		<li><a href="#">js排序</a></li>
-                                       	<li><a href="#">测试中</a></li>
-                                        <li><a href="#">测试中</a></li>
-                                        <li><a href="#">测试中</a></li>
-                                </ul>
-                            </div>     
-                   </div>    		
-            </div>
-            <div id="nav">
-            		<ul>
-                    		<li ><a href="#" class="me">作品案例</a></li>
-                    		<li ><a href="#" class="me">JavaScript实例</a></li>
-                            <li ><a href="#" class="me">Jquery练习</a></li>
-                    </ul>
-            </div>
-          
-</body>
+		<style>
+			.bgPage {
+				height: 750px;
+			}
+			
+			.bg-box-bg,.bg-box-bg1,.bg-box-bg2{
+				height: 800px;
+				width: 100%;
+				position: absolute;
+				background-position: center center;
+				background-size: cover;
+
+			}
+			
+			#bg-img{
+				background-image: url(images/bg-01.jpg);
+			}
+			#bg-img1{
+				background-image: url(images/bg-02.jpg);
+				display: none;
+			}
+			#bg-img2{
+				background-image: url(images/bg-03.jpg);
+				display: none;
+			}
+			.content{
+				width: 250px;
+				overflow: hidden;
+				float: left;
+				margin-top: 25px;
+				border-radius: 11px;
+			}
+			.content-box{
+				width: 100%;
+				min-height: 355px;
+				padding: 25px;
+				background: #ccc;
+				opacity: 0.8;
+				-webkit-box-shadow:5px 2px 6px #000;-moz-box-shadow:5px 2px 6px #000;
+			}
+			.options-box{
+				float: left;
+				width: 100px;
+				margin-top: 25px;
+				margin-left: 35px;
+			}
+			#options1,#options2,#options3{
+				line-height: 50px;
+				opacity: 0.8;
+				margin: 15px 0;
+				width: 150px;
+			}
+			a{
+				font-family: "微软雅黑";
+				color: black;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="bg-page">
+			<div class="bg-box-bg" id="bg-img">
+
+			</div>
+			<div class="bg-box-bg1" id="bg-img1">
+
+			</div>
+			<div class="bg-box-bg2" id="bg-img2">
+
+			</div>
+			<div>
+				<nav class="navbar navbar-inverse">
+					<div class="container" id="navbar-container">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="navbar-head">
+									<a class="navbar-brand" href="#">
+										<big>LeoYing</big><small>工作室</small>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="navbar-form">
+									<div class="navbar-group">
+										<div class="btn-group">
+											<button class="btn btn-primary">背景一</button>
+											<button class="btn btn-info">背景二</button>
+											<button class="btn btn-info">背景三</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4"></div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+					    <div class="content">
+					        <div class="content-box">
+					         	<a href="project/case/grain/index.html">粮食作物</a>
+					         	<a href="project/case/Maldives/index.html">马尔代夫</a>
+					         	<a href="project/case/car/index.html">湖北润力</a>
+						    </div>
+						    <div class="content-box">
+						        <a href="project/example/dropdownlist/index.html">下拉框</a>
+					         	<a href="project/example/getStudent/getStudent.html">获取学生列表</a>
+					         	<a href="project/example/secondMenu/二级菜单.html">JS二级菜单hover效果</a>
+					         	<a href="project/example/SelecedRow/index.html">选中行操作</a>
+					         	<a href="project/example/Step/index.html">选项卡左右移动</a>
+					         	<a href="project/example/ad/ad.html">广告伸缩动画</a>
+						    </div>
+						    <div class="content-box">
+						        <a href="project/css3/Wall/CSS动画背景墙.html">照片墙</a>
+					         	
+						    </div>
+					    </div>
+					    <div class="options-box">
+					    	<div class="btn btn-default" id="options1">JavaScript页面</div>
+					    	<div class="btn btn-default" id="options2">JavaScript示例</div>
+					    	<div class="btn btn-default" id="options3">CSS3演示</div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
 </html>
