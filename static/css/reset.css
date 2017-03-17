@@ -1,0 +1,51 @@
+body,ul,li,p,h1,h2,h3,h4,h5,h6,img,br,hr,table,tr,td,dl,dt,dd,form {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+body {
+
+    font-family: Arial,"΢���ź�";
+
+    font-size: 12px;
+
+    color: #434343;
+}
+.clear {
+
+    clear: both;
+
+    font-size: 0px;
+}
+ul,li {
+
+    list-style: none;
+}
+img {
+
+    border: none;
+}
+/*һ������*/
+
+a {
+    text-decoration: none;
+
+    color: #555;
+}
+a: hover {
+
+    color: #3366ff;
+}
+body{
+    /*background:url(./../images/bg-second.jpg)no-repeat 0px 0px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
+    display: block;*/
+    /*background-position:center; 
+    background-repeat:no-repeat;*/
+}
