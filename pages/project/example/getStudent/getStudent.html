@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Jquery  获取学生信息(遍历Json)</title>
+        <style>
+			tr{height:30px;text-align:center;}
+			td{width:400px;background-color:#CCC;}
+		</style>
+        <script src="JS/jquery-1.8.3.min.js"></script>
+        <script>
+            var student =
+            [{"name":"张三","age":"28","grade":"50"},{"name":"李四","age":"25","grade":"80"},{"name":"王五","age":"30","grade":"88"}];
+            var tr  ="";
+           function studentInfo()
+            {
+				tr = "";
+                $.each(student,function(index,el){
+                   tr +="<tr>"+"<td>"+el.name+"</td>"+"<td>"+el.age+"</td>"+"<td>"+el.grade+"</td>"+"</tr>";
+                })
+               $("table:eq(1)").html(tr);
+            }
+        </script>
+    </head>
+    <body>
+     	<input type ="button" value ="显示学生信息" onClick="studentInfo()"/>
+        <table>
+            <tr id="#tr">
+                <td>姓名</td>
+                <td>年龄</td>
+                <td>分数</td>
+            </tr>
+            
+        </table>
+        <table>
+        
+        </table>
+    </body>
+</html>

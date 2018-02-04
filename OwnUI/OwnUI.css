@@ -1,0 +1,86 @@
+
+body,ul,li,p,h1,h2,h3,h4,h5,h6,img,br,hr,table,tr,td,dl,dt,dd,form,div{
+
+    margin: 0;
+
+    padding: 0;
+
+}
+body {
+
+    font-family: Arial,"微软雅黑";
+
+    font-size: 12px;
+
+    color: #434343;
+}
+.clear {
+
+    clear: both;
+
+    font-size: 0px;
+}
+ul,li {
+
+    list-style: none;
+}
+img {
+
+    border: none;
+}
+20
+/*一般链接*/
+
+a {
+    text-decoration: none;
+
+    color: #555;
+}
+a: hover {
+
+    color: #3366ff;
+}
+
+/**
+ * 组件样式
+ */
+.own-rightMenu{
+	font-family: "宋体";
+	font-size: 12px;
+	box-shadow: 2px 2px 2px #ccc;
+	border: solid #A9A0A0 1px;
+	z-index:999;
+	display: none;
+}
+.own-rightMenu ul{
+   width: 100%;
+   text-align: center;
+}
+
+.own-rightMenu ul:hover{
+	display:block;
+}
+
+.own-rightMenu li{
+	height: 21px;
+	line-height: 21px;
+	font-family: '微软雅黑';
+	border-bottom: solid #ccc 1px;
+	position: relative;
+}
+.own-rightMenu li:hover{
+	background-color: #B6CACE;
+	cursor: pointer;
+}
+
+.hide-childmenu{
+	display: none;
+}
+
+.toggle-rightMenu{
+	
+}
+
+.toggle-rightMenu:hover >ul{
+	display: block;
+}

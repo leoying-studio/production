@@ -1,0 +1,6 @@
+C:\Users\LeoYing\Desktop\TypeScriptHTMLApp2\TypeScriptHTMLApp2\bin\TypeScriptHTMLApp2.dll.config
+C:\Users\LeoYing\Desktop\TypeScriptHTMLApp2\TypeScriptHTMLApp2\bin\TypeScriptHTMLApp2.dll
+C:\Users\LeoYing\Desktop\TypeScriptHTMLApp2\TypeScriptHTMLApp2\bin\TypeScriptHTMLApp2.pdb
+C:\Users\LeoYing\Desktop\TypeScriptHTMLApp2\TypeScriptHTMLApp2\obj\Debug\TypeScriptHTMLApp2.csprojResolveAssemblyReference.cache
+C:\Users\LeoYing\Desktop\TypeScriptHTMLApp2\TypeScriptHTMLApp2\obj\Debug\TypeScriptHTMLApp2.dll
+C:\Users\LeoYing\Desktop\TypeScriptHTMLApp2\TypeScriptHTMLApp2\obj\Debug\TypeScriptHTMLApp2.pdb

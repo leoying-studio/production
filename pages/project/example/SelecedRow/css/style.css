@@ -1,0 +1,4 @@
+#container{width: 900px;margin: 0 auto}
+#content{height:300px;width:500px;margin:88px auto 0 auto;overflow-y:scroll;}
+.row{width:100%;overflow:auto;height:32px;background-color:#ffffff;margin:13px 20px;border-bottom:#CBEEF5 1px solid;}
+.col{float:left;width:120px;line-height:32px;}

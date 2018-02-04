@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>js+Jquery遍历二维数组实现Hover效果</title>
+		<link rel="stylesheet" href="bootstrap.min.css" />
+		<style type="text/css">
+		    *{padding: 0;margin: 0;list-style: none;text-align: center;}
+			#ulParent li{height: 20px;background-color: rosybrown;margin: 2px 8px;padding: 8px 0;width: 120px;cursor:pointer ;}
+			#ulParent li ul{margin-left: 115px;}
+			#ulParent li ul li{background: #ccc;}
+		</style>
+	</head>
+	<body>
+		<script src="jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<div id="move"></div>
+		<script>
+				var arr =[["诗词","唐诗","文学","随州","编钟"],["人文","地理","旅游"],["千年银杏谷","大洪山"]];
+				var menu =["类型一","类型二","类型三"];
+				var ulParent = document.createElement("ul");
+				ulParent.id ="ulParent";
+				ulParent.className ="list-inline";
+				for (var i = 0;i<menu.length;i++) 
+				{
+				    var liParent = document.createElement("li");
+				    liParent.innerHTML = menu[i];
+				    var ul = document.createElement("ul");
+					for (var j = 0;j<arr[i].length;j++) 
+					{
+						var li = document.createElement("li");
+						li.innerHTML = arr[i][j];
+						ul.appendChild(li);
+					}
+					liParent.appendChild(ul);
+					ulParent.appendChild(liParent);
+				}
+			    document.getElementById("move").appendChild(ulParent);
+			    //隐藏子节点
+			     $("#ulParent").children().children().hide();
+			     $("#ulParent").children().bind("mouseover",function(){
+			     	 $(this).children().show();
+			     });
+			     $("#ulParent").children().bind("mouseout",function(){
+			     	 $(this).children().hide();
+			     });
+			  
+		</script>
+	</body>
+</html>

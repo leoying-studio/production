@@ -1,0 +1,47 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+div,span {
+    margin:0;
+    padding:0;
+}
+
+.row {
+    width:300px;
+    display:flex;
+}
+
+.column{
+    flex:1;
+    height:25px;
+    border-right:#ccc solid 1px;
+    border-bottom:solid #ccc 1px;
+    background-color:#f3f1f1;
+}
+
+.red {
+    background-color:red;
+}
+
+.orange {
+    background-color:orange;
+}
+
+.blue {
+    background-color:dodgerblue;
+}
+
+.green {
+    background-color:green;
+}
+
+.yellow{
+    background-color:#b4c84d;
+}
+.purple{
+    background-color: mediumpurple;
+}
+.cyan{
+    background-color: cyan;
+}

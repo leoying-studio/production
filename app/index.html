@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<style>
+	    * {
+	    	margin:0;
+	    	padding:0;
+	    	outline: none;
+	    }
+	    html,body {
+	    	width: 100%;
+	    	height: 100%;
+	    	background:url(img/bg.jpg);
+	    	background-position: center center;
+	    	background-size:cover;
+	    	background-repeat: no-repeat;
+	    }
+	    .container {
+	    	width: 100%;
+	    	max-width: 640px;
+	    	min-width: 280px;
+	    	margin: 0 auto;
+	    }
+		.header {
+			height: 30px;
+		}
+	    .header-wrapper {
+	    	width: 100%;
+	    	margin: 0 auto;
+	    }
+	    .header-wrapper>img {
+	    	display: block;
+	    	width: 32%;
+	    	height: 32%;
+	    	margin: auto;
+	    	border-radius: 100%;
+	    }
+	    .login {
+	    	width: 100%;
+
+	    }
+	    .login form {
+	    	padding: 0 50px;
+	    	box-sizing: border-box;
+	    	font-size: 12px;
+	    	position: relative;
+	    }
+	    .login form span:first-child {
+	    	width: 30px;
+	    	height: 25px;
+			position: absolute;
+			top: 15px;
+			left:55px;
+			background: url(img/user.gif) 0px no-repeat  no-repeat;
+			background-size: cover;
+	    }
+	    .login form span:last-of-type {
+	    	width: 30px;
+	    	height: 25px;
+			position: absolute;
+			top: 69px;
+			left:57px;
+			background: url(img/pass.gif) 0 -5px  no-repeat  no-repeat;
+			background-size: cover;
+	    }
+	    .login form>input {
+			width: 100%;
+			height: 35px;
+			margin: 10px 0;
+			border:solid #ccc 1px;
+			border-radius: 20px;
+			background: #E5E5E5;
+			font-size: 12px;
+			padding-left: 50px;
+			box-sizing: border-box;
+	    }
+	    .login form .wrapper {
+	    	height: 20px;
+	    	display: flex;
+	    	margin-bottom: 20px;
+	    	justify-content: space-around;
+
+	    }
+		.login form .wrapper a {
+			color:#fff;
+			text-decoration: none;
+		}
+		.login form button {
+			width: 108px;
+			height: 31px;
+			border:solid 1px #999;
+			background-color: #6592E3;
+			border-radius: 13px;
+			display: block;
+			margin: 0 auto;
+			color: #e5e5e5;
+		}
+		.clearfix::after {
+			content: "";
+			display: block;
+			visibility: hidden;
+			height: 0;
+			clear: both;
+		}
+
+		.footer {
+			width: 100%;
+			padding: 0 30px;
+			box-sizing: border-box;
+		}
+		.line-wrapper {
+			width: 100%;
+			display: flex;
+			font-size: 0;
+			margin-top: 50px;
+		}
+		.line-wrapper div {
+			display: inline-block;
+		}
+		.line-wrapper .line{
+			flex:1;
+			border-top: solid 1px #ccc;
+			color: #e5e5e5;
+		}
+		.line-wrapper .text {
+			position: relative;
+			bottom:8px;
+			padding: 0 12px;
+			font-size: 12px;
+			color: #ffffff;
+		}
+		.footer .icon {
+			width: 100%;
+			margin-top: 20px;
+			font-size: 0;
+		}
+		.footer .icon a {
+			display: inline-block;
+			width: 33.3333333333%;
+			text-align: center;
+		}
+		.footer .icon a img {
+			width: 35%;
+		}
+	</style>
+</head>
+<body>
+		<div class="container">
+			 <header class="header">
+
+			 </header>
+			 <div class="login">
+			    <div class="header-wrapper">
+			    	<img src="img/pic.jpg" alt="">
+			    </div>
+			 	<form action="">
+			 		<span></span><input type="text" placeholder="请输入用户名">
+			 		<span></span><input type="password" placeholder="请输入密码">
+			 		<div class="wrapper">
+			 			<a href="#">新用户注册</a>
+			 			<a href="#">忘记密码</a>
+			 		</div>
+			 		<button type="button">登录</button>
+			 	</form>
+			 </div>
+			 <footer class="footer">
+			 	  <div class="line-wrapper">
+				 	  	 <div class="line"></div>
+				 	  	 <div class="text">第三方登录</div>
+				 	  	 <div class="line"></div>
+			 	  </div>
+			 	  <div class="icon">
+			 	  	  <a href="#">
+			 	  	  	<img src="img/qq.png" alt="">
+			 	  	  </a>
+			 	  	  <a href="#">
+			 	  	  	<img src="img/weibo.png" alt="" >
+			 	  	  </a>
+			 	  	  <a href="#">
+			 	  	  	<img src="img/wx.png" alt="">
+			 	  	  </a>
+			 	  </div>
+			 </footer>
+		</div>
+</body>
+</html>

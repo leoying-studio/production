@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="OwnUI.css">
+	<script src="OwnUI.js"></script>
+</head>
+
+<body>
+	  <div class="trg1" style="width: 100px;height: 100px;border:solid #ccc 1px">
+	  	
+	  </div>
+	  <div class="trg2" style="width: 100px;height: 100px;border:solid #ccc 1px">
+	  	
+	  </div>
+
+	  <div class="own-rightMenu"></div>
+
+	<script>
+		Own.rightMenu({
+			width:"100px",
+			target:"trg1",
+			menuList:[
+				{
+					menuName:"测试一",
+					event:function(){
+						alert('测试一');
+					}
+				},
+				{
+					menuName:"测试二",
+					event:function(){
+						alert("哈哈");
+					}
+				}
+			]
+		}).init();
+
+		Own.rightMenu({
+			width:"100px",
+			target:"trg2",
+			menuList:[
+				{
+					menuName:"测试二",
+					event:function(){
+						alert('测试二');
+					}
+				}
+			]
+		}).init();
+	</script>
+
+</body>
+
+</html>

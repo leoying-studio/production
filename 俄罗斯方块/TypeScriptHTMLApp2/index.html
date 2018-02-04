@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    
+</head>
+<body>
+    <div>
+        <button onclick="start()">开始</button>
+        <button onclick="suspend()">暂停</button>
+        <select name="" id="grand">
+            <option value="one">普通</option>
+            <option value="two">困难</option>
+            <option value="three">极限模式</option>
+        </select>
+        得分<span id="score"></span>
+    </div>
+    <div id="Tetris">   
+
+    </div>
+     <script src="app.js"></script>
+     <script>
+
+         var tetris = new Tetris();
+         tetris.createMap();
+         tetris.createTetris();
+         tetris.operator();
+         function start(){
+             var val = document.getElementById('grand').value;
+             if(val =="one")
+                speed = 500;
+             else if(val == "two")
+                speed = 300;
+             else   
+                speed = 100;
+             tetris.start(speed);
+         }
+
+         function suspend(){
+             tetris.suspend();
+         }
+     </script>
+</body>
+</html>

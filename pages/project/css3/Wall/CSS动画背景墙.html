@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>背景墙效果</title>
+<style type="text/css">
+	h1{ text-align:center;}
+	img{ width:226px; height:170px;padding:10px;border:1px solid #CCC; position:absolute; -webkit-transition:1s;}
+	img:hover{ -webkit-transform:rotate(30deg) scale(1.1); -webkit-box-shadow:-5px 5px 10px #000; z-index:1;}
+	#containers{ width:800px; height:500px; margin:10px auto; position:relative;}
+	.pic2{ left:50px; bottom:180px;  -webkit-transform:rotate(40deg) }
+	.pic3{ left:350px; bottom:300px; -webkit-transform:rotate(10deg) }
+	.pic4{ left:250px; bottom:100px; -webkit-transform:rotate(60deg) }
+	.pic5{ left:420px; bottom:220px; -webkit-transform:rotate(70deg)}
+	.pic6{ left:560px; bottom:280px; -webkit-transform:rotate(50deg)}
+	.pic7{ margin:50px 200px; -webkit-transform:rotate(80deg); -o-transform:rotate(80deg)}
+</style>
+</head>
+
+<body bgcolor="#CCCCCC">
+	<h1>CSS3背景墙显示</h1>
+    <div id="containers">
+    <img src="1.jpg" class="pic1" />
+	<img src="2.jpg" class="pic2"/>
+	<img src="3.jpg" class="pic3"/>
+	<img src="5.jpg" class="pic4"/>
+    <img src="5.jpg" class="pic5"/>
+    <img src="5.jpg" class="pic6" />
+    <img src="5.jpg" class="pic7" />
+    </div>
+</body>
+</html>
