@@ -30,12 +30,18 @@
          tetris.operator();
          function start(){
              var val = document.getElementById('grand').value;
-             if(val =="one")
-                speed = 500;
-             else if(val == "two")
-                speed = 300;
-             else   
-                speed = 100;
+             var speed = 0;
+             switch(val) {
+                 case 'one':
+                     speed = 500;
+                     break;
+                 case 'two':
+                     speed = 300;
+                     break;
+                 case 'three':
+                     speed = 100;
+                     break;
+             }
              tetris.start(speed);
          }
 
